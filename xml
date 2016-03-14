@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <map proto="1.3.0">
     <name>Villages</name>
-    <version>1.0.0</version>
+    <version>1.0.8</version>
+<!-- 1.0.8 MAP の修正 -->
 <authors>
     <author>Lunasy_</author>
 </authors>
@@ -64,20 +65,22 @@
 <renewables>
     <renewable rate="3" particles="false" sound="false" avoid-entities="false">
         <region>
-            <cuboid min="404,95,656" max="277,10,530"/>
+            <cuboid min="297,92,655" max="404,8,530"/>
         </region>
         <renew>iron ore</renew>
         <renew>coal ore</renew>
+        <renew>gold ore</renew>
         <replace>Cobblestone</replace>
     </renewable>
 </renewables>
 <walls drop-time="600" materials="sand">
     <cuboid min="279,95,594" max="405,49,594"/>
+    <cuboid min="278,95,593" max="405,49,592"/>
 </walls>
 <spawns>
     <spawn team="red" yaw="0" kit="red"><cuboid min="333,55,546" max="333,54,546"/></spawn>
     <spawn team="blue" yaw="178" kit="blue"><cuboid min="333,54,640" max="333,55,640"/></spawn>
-    <default yaw="100"><cuboid min="431,126,594" max="431,127,594"/></default>
+    <default yaw="90"><cuboid min="431,126,594" max="431,127,594"/></default>
 </spawns>
 <shops>
   <shop name="Weapon">
@@ -106,6 +109,7 @@
                 <cuboid max="404,9,531" min="278,94,531"/>
                 <cuboid max="278,94,531" min="278,9,656"/>
                 <cuboid max="278,9,656" min="404,9,656"/>
+                <cuboid min="279,95,594" max="405,49,594"/>
     </apply>
 </regions>
 <maxbuildheight>92</maxbuildheight>
